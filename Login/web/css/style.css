@@ -1,0 +1,262 @@
+/*
+Style sheet "Sign up page"
+*/
+/*--reset--*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;}
+.txt-rt{text-align:right;}
+.txt-lt{text-align:left;}
+.txt-center{text-align:center;}
+.float-rt{float:right;}
+.float-lt{float:left;}
+.clear{clear:both;}
+.pos-relative{position:relative;}
+.pos-absolute{position:absolute;}
+.vertical-base{	vertical-align:baseline;}
+.vertical-top{	vertical-align:top;}
+nav.vertical ul li{	display:block;}
+nav.horizontal ul li{	display: inline-block;}
+img{max-width:100%;}
+/*--end reset--*/
+body {
+   background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+	background-attachment: fixed;
+	font-family: 'PT Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Cookie', cursive;
+}
+.clearfix{
+	clear:both;
+}
+body a, input[type="submit"], input[type="email"],input[type="text"],input[type="password"]{
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+	text-decoration:none;
+}
+
+/**** LOGIN_SIGNUP ******/
+h1.wthree {
+    text-transform: capitalize;
+    font-size: 4em;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding: 0.8em 0 0.2em;
+    text-align: center;
+}
+h2.wthree {
+    font-size: 3.5em;
+    color: ##0000FF;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+/* signup Form styles */
+.container {
+    margin: 1em 18em 1.7em 0;
+}
+.login-w3l {
+    padding: 3em;
+    width: 41%;
+    float: right;
+    border-left: 10px solid #0000FF;
+}
+/*-- login --*/
+.login-section {
+    width: 50%;
+    margin: 2em auto 4em;
+    background: #fff;
+    box-shadow: rgba(255, 255, 255, 0.41) 13px 16px 12px;
+}
+.login-w3l-bg {
+    float: left;
+    width: 43%;
+    margin-top: 7em;
+}
+label.header {
+    margin: 0.5em 0 1em;
+    font-size: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000;
+}
+.agile_form input[type=text], .agile_form input[type=password],.agile_form input[type="email"]  {
+    padding: 0.9em 0em;
+    color: #000;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+    border: solid #dadada;
+    border-width: 0 0 2px 0;
+    background: transparent;
+    margin: 0 0 1em 0;
+}
+.w3ls-name1:hover label {
+    color: #0000FF;
+}
+.w3ls-name1:hover input[type=text], .w3ls-name1:hover  input[type=email], .w3ls-name1:hover input[type=password]{
+    border-color: #0000FF;
+}
+.agile_form input[type="submit"] {
+    width: 48%;
+    margin: 1em auto 0;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    display: block;
+    border-radius: 10px;
+    padding: 0.5em 0;
+    letter-spacing: 1px;
+    border: 2px solid #0000FF;
+    background: #0000FF;
+}
+.agile_form input[type="submit"]:hover {
+    color: #000;
+    background: transparent;
+}
+p.footer {
+    text-align: center;
+    color: #fff;
+    padding-bottom:3em;
+}
+p.footer a{
+    color:#fff;
+}
+/* -- Responsive code -- */
+@media screen and (max-width: 1920px){
+    h1.wthree {
+       padding: 3.8em 0 0.2em;
+    }
+}
+@media screen and (max-width: 1680px){
+    h1.wthree {
+         padding: 1.8em 0 0.2em;
+    }
+}
+@media screen and (max-width: 1600px){
+    h1.wthree {
+         padding: 0.8em 0 0.2em;
+    }
+}
+@media screen and (max-width: 1366px){
+    .login-section {
+        width: 57%;
+    }
+}
+@media screen and (max-width: 1080px){
+    .login-section {
+        width: 67%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .login-section {
+        width: 73%;
+    }
+}
+@media screen and (max-width: 900px){
+    .login-section {
+        width: 77%;
+    }
+}
+@media screen and (max-width: 800px){
+    .login-section {
+        width: 86%;
+    }
+}
+@media screen and (max-width: 768px){
+    .login-w3l {
+        width: 85%;
+        float: none;
+        border-bottom: 10px solid #0000FF;
+        border-left:none;
+    }
+    .login-w3l-bg {
+        float: none;
+        width: 100%;
+        margin: 1em auto;
+    }
+}
+@media screen and (max-width: 667px){
+    h1.wthree {
+        font-size: 3.8em;
+    }
+    .login-w3l {
+        width: 83%;
+    }
+}
+@media screen and (max-width: 640px){
+    .login-w3l {
+         padding: 2em 3em 3em;
+    }
+}
+@media screen and (max-width: 600px){
+    .login-w3l {
+        width: 81%;
+    }
+}
+@media screen and (max-width: 568px){
+    h1.wthree {
+        font-size: 3.5em;
+    }
+    h2.wthree {
+        font-size: 3.2em;
+    }
+}
+@media screen and (max-width: 480px){
+    .login-w3l {
+        width: 76%;
+    }
+    p.footer {
+       line-height: 1.5;
+        padding: 0 1em 3em;
+    }
+}
+@media screen and (max-width: 414px){
+    h1.wthree {
+        font-size: 3.2em;
+    }
+    h2.wthree {
+        font-size: 3em;
+    }
+    .login-section {
+        margin: 1em auto 3em;
+    }
+}
+@media screen and (max-width: 384px){
+    .login-w3l {
+        width: 70%;
+    }
+    h1.wthree {
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 375px){
+    h2.wthree {
+        font-size: 2.5em;
+    }
+    .login-w3l {
+        width: 79%;
+        padding: 2em 2em 3em;
+    }
+}
+@media screen and (max-width: 320px){
+    h1.wthree {
+        font-size: 2.6em;
+    }
+    .login-w3l {
+        width: 76%;
+    }
+}
