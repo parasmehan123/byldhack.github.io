@@ -2,7 +2,7 @@
 ## Made as a part of Byld Hackathon
 ## Ordering system to minimise the waiting time and return the approx. time required for the order.
 
-###Main Features : 
+### Main Features : 
 
 Instead of database, we made the use of Google-Sheets-API's.
 
